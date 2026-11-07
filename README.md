@@ -20,7 +20,4 @@ Prompt 01 is by [Steve Ruiz](https://x.com/steveruizok/status/211655201621871038
 
 ## About me
 
-I'm Saurav, an ex-Amazon engineer. I make videos on Claude Code, Codex and AI costs on [CloudYeti](https://www.youtube.com/@cloudyeti).
-
-- To test what you know about Claude, AWS and other tools, try the free quizzes at [learn.cloudyeti.io](https://learn.cloudyeti.io).
-- If you ran prompt 01, got a long list back, and want help deciding what to fix first, you can book a 1:1 call: [cloudyeti.io/meet](https://cloudyeti.io/meet).
+I'm Saurav, an ex-Amazon engineer. I make videos on Claude Code, Codex and AI costs on [CloudYeti](https://www.youtube.com/@cloudyeti). Book a 1:1 call for any kind of AI help or consulting: [cloudyeti.io/meet](https://cloudyeti.io/meet).
