@@ -4,7 +4,7 @@ One-sentence prompts for coding agents where every word does work ([what qualifi
 
 | # | Prompt | Receipts |
 |---|---|---|
-| 01 | [`find all of the implicit state machines in my app`](prompts/01-implicit-state-machines.md) | Adobe, Foundry, Alloy, Hyperlane and more ([list](prompts/01-implicit-state-machines.md#who-vouched-for-it)) |
+| 01 | [`find all of the implicit state machines in my app`](prompts/01-implicit-state-machines.md) | Adobe, opencode, Foundry, Alloy, Hyperlane and more ([list](prompts/01-implicit-state-machines.md#who-vouched-for-it)) |
 
 ## Use one
 
