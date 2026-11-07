@@ -2,16 +2,7 @@
 
 These prompts came up in the replies to prompt 01. They look useful, but nobody has posted results from them yet, so they are not in the collection. A candidate moves to `prompts/` when two or three people run it and show what it found (see [AGENTS.md](AGENTS.md)).
 
-If you run one of these, open an issue with a link to your results.
-
-## Pick an archetype
-
-```
-Come up with a few archetypes of decisionmakers, and what would they do in this situation. I will pick which archetype I am.
-```
-
-For decisions in an area you do not know well. The author uses it often for database design.
-Posted by [Loweren (@See_Elegance)](https://x.com/See_Elegance).
+If you run one of these, open a "Vouch for a prompt" issue with a link to your results. To add a new candidate, open a "Suggest a prompt" issue.
 
 ## The smallest abstraction that removes a class of problems
 

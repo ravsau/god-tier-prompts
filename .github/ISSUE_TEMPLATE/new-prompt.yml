@@ -1,0 +1,32 @@
+name: Suggest a prompt
+description: A one-sentence prompt for coding agents. It starts as a candidate until it has receipts.
+title: "Prompt: "
+labels: [candidate]
+body:
+  - type: textarea
+    id: prompt
+    attributes:
+      label: The prompt, exactly as written
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: origin
+    attributes:
+      label: Link to where it was first posted
+      description: Credit the person who wrote it. If it is yours, say so.
+    validations:
+      required: true
+  - type: textarea
+    id: finds
+    attributes:
+      label: What it finds or changes, in one or two plain sentences
+    validations:
+      required: true
+  - type: textarea
+    id: receipt
+    attributes:
+      label: Your receipt
+      description: A public link that shows a result from your own work, such as a PR, an issue, or a post with a screenshot of the output. "It worked great" without a link is not a receipt.
+    validations:
+      required: true

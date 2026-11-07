@@ -1,0 +1,30 @@
+name: Vouch for a prompt
+description: You ran a prompt from this repo or from candidates.md and can show what it found.
+title: "Vouch: "
+labels: [vouch]
+body:
+  - type: input
+    id: which
+    attributes:
+      label: Which prompt (number or title)
+    validations:
+      required: true
+  - type: input
+    id: receipt
+    attributes:
+      label: Public link to the result
+      description: A PR, an issue, a commit, or a post with a screenshot of the agent's output.
+    validations:
+      required: true
+  - type: textarea
+    id: found
+    attributes:
+      label: What it found, with a number if you have one
+      description: For example "11 state machines, 3 real bugs, one double charge on retry".
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Agent and model (optional)
+      description: For example "Claude Code, Opus 5.5 high" or "Codex".

@@ -12,12 +12,23 @@ Steve Ruiz ([@steveruizok](https://x.com/steveruizok)) [posted it on X](https://
 
 ## Who vouched for it
 
-These people ran it on their own code and posted what happened:
+People who credited the prompt and showed what it found:
 
+- [Lars Trieloff](https://github.com/trieloff) (Adobe) [posted](https://x.com/trieloff/status/2116867892797165660): "'find all the implicit state machines in my app' is a fantastic prompt. Thanks for the suggestion, @steveruizok". His audit of Adobe's [helix-opspile](https://github.com/adobe/helix-opspile/issues/233) found that only one table has a real status column. The rest of the state lives in nullable timestamps, leases and in-memory flags. Its first known defect: a reply can post twice on Retry.
+- [Garrett Petersen (@GarrettPetersen)](https://x.com/GarrettPetersen): "Major refactor as a result of this. Also adding 'no implicit state machines' to my agent skills. Simply knowing the phrase 'implicit state machine' is the kind of thing that pays off in the age of vibe coding."
 - [Yahia Bakour (@mynameisyahia)](https://x.com/mynameisyahia): "I genuinely hate how many bugs this found. Run it. Now."
 - [Daniel Lockyer (@DanielLockyer)](https://x.com/DanielLockyer) posted a screenshot of his agent's summary: "I found about 70 implicit state machines. [...] spread across request handlers, Stripe web[...]"
 - [Ben Kremer (@bkrem_)](https://x.com/bkrem_): "Confirming that this is a goated prompt, so much mileage out of a handful of words. (Opus 5.5 high)"
-- [Garrett Petersen (@GarrettPetersen)](https://x.com/GarrettPetersen): "Major refactor as a result of this. Also adding 'no implicit state machines' to my agent skills. Simply knowing the phrase 'implicit state machine' is the kind of thing that pays off in the age of vibe coding."
+
+### Public refactors since the prompt went around
+
+These PRs and issues do not name the prompt, but they do the exact audit it asks for. GitHub search finds 399 pull requests that mention "implicit state machine" from Oct 31 to Nov 7, 2026, against 74 in the 30 days before. (GitHub search API, read 2026-11-07.)
+
+- [Georgios Konstantopoulos](https://github.com/gakonst) (Paradigm) opened PRs on [Foundry](https://github.com/foundry-rs/foundry/pull/18228) and [Alloy](https://github.com/alloy-rs/alloy/pull/4504): "Many lifecycles in Foundry were encoded implicitly, as bools or Options that are only valid in certain combinations, sentinel values, or flags kept in sync by hand." Each one becomes an enum, "so illegal combinations can no longer be represented".
+- [Hyperlane](https://github.com/hyperlane-xyz/hyperlane-monorepo/pull/9971), by Paul Balaji: lifecycle state spread across flags, nullable resources, retry deadlines and queues could "lose ownership, publish stale state, resurrect stopped services [...] or replay already-confirmed mutations".
+- [Flanksource Mission Control](https://github.com/flanksource/mission-control/issues/3678): a cancelled or timed-out playbook run could go back to scheduled when an in-flight action finished.
+- [Darkroom Engineering's Claude settings](https://github.com/darkroomengineering/cc-settings/pull/298): they made it a rule, so Claude spots the pattern while writing, flags it in review, and can map every case in an app on request.
+- [Hyperion](https://github.com/usehyperion/hyperion/pull/317): "refactor: remove implicit state machines", merged Nov 3, 2026.
 
 ## What it means
 

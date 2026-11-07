@@ -9,8 +9,8 @@ This started from a reply to [Steve Ruiz's prompt on X](https://x.com/steveruizo
 This list stays small on purpose. A prompt gets in only when it is goated and vouched:
 
 1. It is one sentence, or close to it.
-2. Several people ran it on their own work and posted what it found or changed, not only that they liked it.
-3. The page names who vouched for it, with links.
+2. At least 3 different people (not the author) ran it on their own work and posted a public receipt: a PR, an issue, or a screenshot of what it found. Likes and "great prompt" replies do not count.
+3. The page names who vouched for it, with links to the receipts.
 
 It is fine if this list has fewer than five prompts for a long time. One prompt that people have tested is worth more than fifty that sound clever. Prompts that look promising but have no public results yet wait in [candidates.md](candidates.md).
 
@@ -18,7 +18,7 @@ It is fine if this list has fewer than five prompts for a long time. One prompt 
 
 | # | Prompt | What it finds | Vouched by |
 |---|---|---|---|
-| 01 | [`find all of the implicit state machines in my app`](prompts/01-implicit-state-machines.md) | Hidden states and transitions spread across flags, timestamps and `if` checks, and the bugs they cause | Yahia Bakour, Daniel Lockyer, Ben Kremer, Garrett Petersen ([receipts](prompts/01-implicit-state-machines.md#who-vouched-for-it)) |
+| 01 | [`find all of the implicit state machines in my app`](prompts/01-implicit-state-machines.md) | Hidden states and transitions spread across flags, timestamps and `if` checks, and the bugs they cause | Lars Trieloff (Adobe), Garrett Petersen, Yahia Bakour, Daniel Lockyer, Ben Kremer, plus public refactors in Foundry, Alloy and Hyperlane ([receipts](prompts/01-implicit-state-machines.md#who-vouched-for-it)) |
 
 ## Lines for your coding agent's system prompt
 
@@ -42,7 +42,11 @@ Garrett Petersen [did a major refactor](prompts/01-implicit-state-machines.md#wh
 
 ## Add one
 
-Open a pull request with a new file in `prompts/`, or add it to `candidates.md` if you do not have results yet. Include links to people who ran it and showed what it found. Credit the person who first posted it. The full rules are in [AGENTS.md](AGENTS.md).
+1. Open a ["Suggest a prompt"](../../issues/new?template=new-prompt.yml) issue with the prompt, who first posted it, and your own receipt. It becomes a candidate.
+2. If you ran a prompt from here or from `candidates.md`, open a ["Vouch for a prompt"](../../issues/new?template=vouch.yml) issue with a link to the result.
+3. When a candidate has 3 receipts from different people, open a PR to move it into `prompts/`.
+
+Details in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Credits
 
