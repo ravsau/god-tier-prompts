@@ -12,7 +12,7 @@ Open Claude Code, Codex or Cursor in your repo, paste the prompt, and read the r
 
 ## Add one
 
-Open a [Suggest a prompt](../../issues/new?template=new-prompt.yml) issue. It waits as a [candidate](../../issues?q=is%3Aissue+is%3Aopen+label%3Acandidate) until 3 people comment with receipts. Rules: [CONTRIBUTING.md](CONTRIBUTING.md).
+Open a [Suggest a prompt](../../issues/new?template=new-prompt.yml) issue. It waits as a candidate until 3 people comment with receipts. Open candidates: [issues](../../issues?q=is%3Aissue+is%3Aopen+label%3Acandidate) and [PRs](../../pulls?q=is%3Apr+is%3Aopen+label%3Acandidate). Give a 👍 to the ones you want in. Rules: [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Credits
 

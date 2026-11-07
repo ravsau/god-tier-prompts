@@ -21,9 +21,9 @@ In practice, a prompt must pass these checks:
 
 ## How a prompt gets in
 
-1. **Suggest it.** Open a "Suggest a prompt" issue. It gets the `candidate` label. Open candidate issues are the waiting list.
-2. **Collect receipts.** People who run it comment on the candidate issue with a public link to what it found.
-3. **Promote it.** When a candidate has receipts from at least 3 different people (not the author), anyone can open a PR that moves it to `prompts/` with those receipts on its page. The PR closes the issue.
+1. **Suggest it.** Open a "Suggest a prompt" issue, or a draft PR that adds the prompt's page to `prompts/`. Either one gets the `candidate` label. Open candidates are the waiting list. Give a 👍 to the ones you want in.
+2. **Collect receipts.** People who run it comment on the candidate issue or PR with a public link to what it found.
+3. **Promote it.** When a candidate has receipts from at least 3 different people (not the author), it goes into `prompts/` with those receipts on its page. For an issue, open a PR that closes the issue. For a candidate PR, add the receipts and merge it.
 
 ## What counts as a receipt
 

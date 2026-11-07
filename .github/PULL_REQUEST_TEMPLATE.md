@@ -1,4 +1,4 @@
-Most prompts should start as an issue ("Suggest a prompt"), not a PR. Open a PR to move a candidate into `prompts/` only when it meets the bar.
+A new prompt can start as an issue ("Suggest a prompt") or as a draft PR with the `candidate` label. A PR is merged only when the prompt meets the bar.
 
 - [ ] The prompt is one sentence, or close to it, and is copied exactly from the first post.
 - [ ] The first post is linked and credited.
