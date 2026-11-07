@@ -1,5 +1,5 @@
 name: Vouch for a prompt
-description: You ran a prompt from this repo or from candidates.md and can show what it found.
+description: You ran a prompt that is already in this repo and can show what it found. For a candidate, comment on its issue instead.
 title: "Vouch: "
 labels: [vouch]
 body:
