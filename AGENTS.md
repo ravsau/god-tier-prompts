@@ -7,13 +7,13 @@ This repo is a short list of prompts that people have tested. Keep it short.
 - A prompt goes into `prompts/` only when it is goated and vouched: at least 3 different people, other than the author, ran it on their own work and posted a public receipt (PR, issue, commit, or a screenshot of the output). Links to those posts go on the prompt's page under "Who vouched for it".
 - Likes, views and "great prompt" replies are not a vouch. A vouch shows a result: bugs found, a refactor, a number.
 - It is fine if the collection has fewer than five prompts. Do not add prompts to make the list look bigger. Do not write new prompts yourself and add them.
-- Prompts with promise but no public results go into `candidates.md`. Move one to `prompts/` only after the vouches exist.
+- Prompts with promise but no public results stay as open issues with the `candidate` label. There is no candidates file; the issues are the only list. Move one to `prompts/` only after the vouches exist, then close its issue.
 - Longer variants of an existing prompt go on that prompt's page, not into a new file.
 
 ## Intake
 
-- New prompts arrive as "Suggest a prompt" issues (label `candidate`) and get a line in `candidates.md`.
-- Receipts arrive as "Vouch for a prompt" issues (label `vouch`) or comments. Open each link and check that it shows a result before you add it to a page.
+- New prompts arrive as "Suggest a prompt" issues (label `candidate`).
+- Receipts arrive as comments on the candidate issue, or as "Vouch for a prompt" issues (label `vouch`) for prompts already in. Open each link and check that it shows a result before you add it to a page.
 - A well-known name does not replace a receipt. When a known engineer or project posts a receipt, list it first.
 - Prompts for general decisions or learning, not for a coding agent working on a repo, do not belong here.
 

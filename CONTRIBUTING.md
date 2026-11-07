@@ -4,9 +4,9 @@ The collection grows through receipts, not through votes or follower counts.
 
 ## How a prompt gets in
 
-1. **Suggest it.** Open a "Suggest a prompt" issue. It gets the `candidate` label and a line in `candidates.md`.
-2. **Collect receipts.** People who run it open a "Vouch for a prompt" issue, or comment on the candidate issue, with a public link to what it found.
-3. **Promote it.** When a candidate has receipts from at least 3 different people (not the author), anyone can open a PR that moves it to `prompts/` with those receipts on its page.
+1. **Suggest it.** Open a "Suggest a prompt" issue. It gets the `candidate` label. Open candidate issues are the waiting list.
+2. **Collect receipts.** People who run it comment on the candidate issue with a public link to what it found.
+3. **Promote it.** When a candidate has receipts from at least 3 different people (not the author), anyone can open a PR that moves it to `prompts/` with those receipts on its page. The PR closes the issue.
 
 ## What counts as a receipt
 

@@ -12,7 +12,7 @@ This list stays small on purpose. A prompt gets in only when it is goated and vo
 2. At least 3 different people (not the author) ran it on their own work and posted a public receipt: a PR, an issue, or a screenshot of what it found. Likes and "great prompt" replies do not count.
 3. The page names who vouched for it, with links to the receipts.
 
-It is fine if this list has fewer than five prompts for a long time. One prompt that people have tested is worth more than fifty that sound clever. Prompts that look promising but have no public results yet wait in [candidates.md](candidates.md).
+It is fine if this list has fewer than five prompts for a long time. One prompt that people have tested is worth more than fifty that sound clever. Prompts that look promising but have no public results yet wait as [candidate issues](../../issues?q=is%3Aissue+is%3Aopen+label%3Acandidate).
 
 ## The prompts
 
@@ -43,7 +43,7 @@ Garrett Petersen [did a major refactor](prompts/01-implicit-state-machines.md#wh
 ## Add one
 
 1. Open a ["Suggest a prompt"](../../issues/new?template=new-prompt.yml) issue with the prompt, who first posted it, and your own receipt. It becomes a candidate.
-2. If you ran a prompt from here or from `candidates.md`, open a ["Vouch for a prompt"](../../issues/new?template=vouch.yml) issue with a link to the result.
+2. If you ran a prompt from here or from an open candidate issue, open a ["Vouch for a prompt"](../../issues/new?template=vouch.yml) issue with a link to the result.
 3. When a candidate has 3 receipts from different people, open a PR to move it into `prompts/`.
 
 Details in [CONTRIBUTING.md](CONTRIBUTING.md).
