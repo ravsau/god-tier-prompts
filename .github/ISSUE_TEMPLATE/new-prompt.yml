@@ -7,6 +7,7 @@ body:
     id: prompt
     attributes:
       label: The prompt, exactly as written
+      description: One sentence, no skill file. Every word should do work. See "What makes a prompt god tier" in CONTRIBUTING.md.
       render: text
     validations:
       required: true

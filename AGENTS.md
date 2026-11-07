@@ -2,6 +2,10 @@
 
 This repo is a short list of prompts that people have tested. Keep it short.
 
+## What qualifies
+
+Read "What makes a prompt god tier" in CONTRIBUTING.md. A prompt must be one sentence, every word must do work, it must use at least one loaded term the model knows, and it must produce a checkable result in real code. Bootoshi's brief, quoted there, is the source of these rules.
+
 ## Do not inflate the list
 
 - A prompt goes into `prompts/` only when it is goated and vouched: at least 3 different people, other than the author, ran it on their own work and posted a public receipt (PR, issue, commit, or a screenshot of the output). Links to those posts go on the prompt's page under "Who vouched for it".

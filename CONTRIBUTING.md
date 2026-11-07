@@ -2,6 +2,23 @@
 
 The collection grows through receipts, not through votes or follower counts.
 
+## What makes a prompt god tier
+
+The brief for this repo came from [Bootoshi](https://x.com/KingBootoshi):
+
+> we need a collection of God tier prompts like this
+>
+> not skills I DON'T CARE ABOUT YOUR SKILLS
+>
+> i want a single sentence of vectors so juicy each verb, noun, and adjective act like flavorful curry bombs BURSTING with information that a simple prompt ends up being VERY impactful
+
+In practice, a prompt must pass these checks:
+
+1. **One sentence.** No skill file, no setup, no multi-step template. If it needs a document to work, it is a skill, not a prompt for this repo.
+2. **Every word does work.** Remove any word and the result gets worse. Filler like "you are an expert" or "make no mistakes" fails this check.
+3. **At least one loaded term.** It uses a precise term the model already knows well, which pulls in a whole body of knowledge. In prompt 01, "implicit state machines" tells the agent what to look for, where it hides, and what bugs it causes, all in three words.
+4. **It finds or changes something real.** It produces a result you can check in your own code, not advice.
+
 ## How a prompt gets in
 
 1. **Suggest it.** Open a "Suggest a prompt" issue. It gets the `candidate` label. Open candidate issues are the waiting list.

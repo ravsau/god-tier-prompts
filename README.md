@@ -1,6 +1,6 @@
 # God Tier Prompts
 
-One-sentence prompts for coding agents that do a lot of work. A prompt gets in only when at least 3 people ran it on their own code and posted a public receipt (a PR, an issue, or a screenshot of what it found). Fewer than five prompts is fine. The list stays small on purpose.
+One-sentence prompts for coding agents where every word does work ([what qualifies](CONTRIBUTING.md#what-makes-a-prompt-god-tier)). A prompt gets in only when at least 3 people ran it on their own code and posted a public receipt (a PR, an issue, or a screenshot of what it found). Fewer than five prompts is fine. The list stays small on purpose.
 
 | # | Prompt | Receipts |
 |---|---|---|
