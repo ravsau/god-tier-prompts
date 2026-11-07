@@ -8,11 +8,16 @@ Ten words. Paste it into Claude Code, Codex, Cursor or any coding agent that can
 
 ## Where it came from
 
-Steve Ruiz ([@steveruizok](https://x.com/steveruizok)) posted it on X on Oct 31, 2026 with the words "good prompt". The post passed 1.1M views. People who ran it on their own code replied:
+Steve Ruiz ([@steveruizok](https://x.com/steveruizok)) [posted it on X](https://x.com/steveruizok/status/2116552016218710389) on Oct 31, 2026 with the words "good prompt". The post passed 1.1M views.
 
-- Yahia Bakour: "I genuinely hate how many bugs this found. Run it. Now."
-- Daniel Lockyer posted a screenshot of his agent's summary: "I found about 70 implicit state machines. [...] spread across request handlers, Stripe web[...]"
-- Ben Kremer: "Confirming that this is a goated prompt, so much mileage out of a handful of words. (Opus 5.5 high)"
+## Who vouched for it
+
+These people ran it on their own code and posted what happened:
+
+- [Yahia Bakour (@mynameisyahia)](https://x.com/mynameisyahia): "I genuinely hate how many bugs this found. Run it. Now."
+- [Daniel Lockyer (@DanielLockyer)](https://x.com/DanielLockyer) posted a screenshot of his agent's summary: "I found about 70 implicit state machines. [...] spread across request handlers, Stripe web[...]"
+- [Ben Kremer (@bkrem_)](https://x.com/bkrem_): "Confirming that this is a goated prompt, so much mileage out of a handful of words. (Opus 5.5 high)"
+- [Garrett Petersen (@GarrettPetersen)](https://x.com/GarrettPetersen): "Major refactor as a result of this. Also adding 'no implicit state machines' to my agent skills. Simply knowing the phrase 'implicit state machine' is the kind of thing that pays off in the age of vibe coding."
 
 ## What it means
 
@@ -76,6 +81,12 @@ For each workflow:
 Do not modify code. Put concrete issues before theoretical ones.
 ```
 
+Another long version from the replies, by [pooomj (@Dyikhyi56)](https://x.com/Dyikhyi56), that also asks for fixes:
+
+```
+Reverse-engineer my codebase: uncover hidden state machines, broken invariants, implicit contracts and bottlenecks. Stress-test failures, retries and concurrency. Prove what's broken, then find the smallest changes that eliminate entire classes of bugs and complexity.
+```
+
 ## What to do with the results
 
 You do not need a state machine library such as XState to fix most findings. For the top few:
@@ -85,3 +96,15 @@ You do not need a state machine library such as XState to fix most findings. For
 3. Write a test for each transition, and one test for each invalid state the audit found.
 
 Run the audit again after a few weeks of new features.
+
+## Keep new ones out
+
+The prompt finds implicit state machines after they exist. [Pps831](https://x.com/Pps831) asked for a matching rule so the agent does not create them, and Garrett Petersen added "no implicit state machines" to his agent skills. Put this in your repo's `CLAUDE.md` or `AGENTS.md`:
+
+```
+No implicit state machines. When something can change state over time (a
+subscription, an upload, a job, an auth session), store it as one explicit
+status field with a written list of allowed transitions, and check that list
+at every place the state changes. Do not add a new boolean or timestamp that
+silently creates a new state.
+```
